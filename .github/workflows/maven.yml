@@ -28,8 +28,8 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2        
     - name: Test1
-      run: mvn test -Dgropus="test1"
+      run: mvn test -Dgroups="test1"
     - name: Test1
-      run: mvn test -Dgropus="test2"
+      run: mvn test -Dgroups="test2"
     - name: Build with Maven
       run: mvn -B package --file pom.xml
