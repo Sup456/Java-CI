@@ -11,6 +11,7 @@ public class ExampleTest {
     void success_test1() {
         String a = "Hello";
         a = Example.addTestPostfix(a);
+        
         assertTrue(a.equals("HelloTest"));
     }
 
