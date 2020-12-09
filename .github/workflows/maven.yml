@@ -29,8 +29,8 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Build and publish package
-        run: |
+      run: |
           mvn -B versions:set -DnewVersion=$GITHUB_SHA -DgenerateBackupPoms=false
           mvn -B -DskipTests -Dskip.installnodenpm -Dskip.npm -Pskip-shaded-web-jar -Pskip-tools-jar source:jar deploy
-        env:
+      env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
