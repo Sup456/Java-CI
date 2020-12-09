@@ -50,12 +50,12 @@
     </dependencies>
         
     <distributionManagement>
-      <repository>
-        <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/Sup456/Java-CI</url>
-      </repository>
-    </distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>GitHub MRtecno98 Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/Sup-456/Java-CI</url>
+	   </repository>
+	</distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
