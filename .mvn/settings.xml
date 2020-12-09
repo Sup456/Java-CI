@@ -15,6 +15,7 @@
                     <id>github</id>
                     <name>GitHub Apache Maven Packages</name>
                     <url>https://maven.pkg.github.com/Sup456/Java-CI</url>
+                    <snapshots><enabled>true</enabled></snapshots>
                 </repository>
             </repositories>
         </profile>
